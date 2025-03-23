@@ -1,0 +1,12 @@
+/* Esconde todos os elementos antes de aparecerem */
+*:not(html):not(body):not(script) {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Quando o elemento entra na tela, ele aparece */
+.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
